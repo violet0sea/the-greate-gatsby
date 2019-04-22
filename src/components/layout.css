@@ -190,9 +190,7 @@ textarea {
   font: inherit;
 }
 html {
-  font: 112.5%/1.45em;
   box-sizing: border-box;
-  overflow-y: scroll;
 }
 * {
   box-sizing: inherit;
