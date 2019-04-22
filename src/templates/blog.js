@@ -12,7 +12,7 @@ export default ({ data }) => {
         <title>{post.frontmatter.title}</title>
       </Helmet>
       <div>
-        <h1>{post.frontmatter.title}</h1>
+        <h3>{post.frontmatter.title}</h3>
         <article dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
     </Layout>
