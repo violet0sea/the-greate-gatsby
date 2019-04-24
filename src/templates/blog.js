@@ -1,3 +1,6 @@
+/**
+ * @description blog页面的模板文件
+ */
 import React from 'react';
 import { graphql } from 'gatsby';
 import { Helmet } from 'react-helmet';
@@ -12,7 +15,7 @@ export default ({ data }) => {
         <title>{post.frontmatter.title}</title>
       </Helmet>
       <div>
-        <h3>{post.frontmatter.title}</h3>
+        <h1>{post.frontmatter.title}</h1>
         <article dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
     </Layout>
@@ -20,7 +23,7 @@ export default ({ data }) => {
 };
 
 export const query = graphql`
-  query($slug: String!) {
+  query BlogPostBySlug($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {

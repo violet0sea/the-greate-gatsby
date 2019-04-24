@@ -480,17 +480,11 @@ pre tt:after {
   content: '';
 }
 
-@media only screen and (max-width: 480px) {
-  html {
-    font-size: 100%;
-  }
-}
-
 // layout 基本布局
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: rem(12);
+  font-size: rem(14);
   max-width: 1200px;
   margin: 0 auto;
   color: $normal_color;
