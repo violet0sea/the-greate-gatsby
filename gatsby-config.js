@@ -1,6 +1,7 @@
 const autoprefixer = require('autoprefixer');
 
 module.exports = {
+  pathPrefix: `/the-greate-gatsby`,
   siteMetadata: {
     title: `dudulu`,
     description: `dudulu's blog, write, code, listen to music, watch movie, etc`,
