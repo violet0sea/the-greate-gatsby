@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "dudulu-blog",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "A blog developing with Gatsby",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "dudulu <fadedspreadsea@gmail.com>",
   "dependencies": {
     "gatsby": "^2.3.16",
     "gatsby-image": "^2.0.37",
@@ -28,7 +28,8 @@
     "sass": "^1.19.0"
   },
   "keywords": [
-    "gatsby"
+    "dudulu",
+    "blog"
   ],
   "license": "MIT",
   "scripts": {

@@ -1,6 +1,6 @@
 ---
 path: '/blog/2019/webpack-plugin'
-title: 'how to use gatsby to develop a blog'
+title: 'webpack-plugin-develop'
 date: '2019-04-28'
 ---
 
