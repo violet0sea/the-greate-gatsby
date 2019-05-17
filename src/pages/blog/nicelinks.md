@@ -30,6 +30,11 @@ date: '2019-04-28'
 
 - 📜 [node-js-child-processes](https://medium.freecodecamp.org/node-js-child-processes-everything-you-need-to-know-e69498fe970a)
 - 📜 [node-js-cluster](https://medium.freecodecamp.org/scaling-node-js-applications-8492bd8afadc)
+- 📜 [node-js-performance-monitoring-with-prometheus](https://medium.com/the-node-js-collection/node-js-performance-monitoring-with-prometheus-c3d50c2d5608)
+- 📜 [node-js-jwt-authentication](https://medium.com/dev-bits/a-guide-for-adding-jwt-token-based-authentication-to-your-single-page-nodejs-applications-c403f7cf04f4)
+
+- 📜 [restful-api-design-with-node-js](https://hackernoon.com/restful-api-design-with-node-js-26ccf66eab09)
+- 📜 [restful-apis-with-json-web-tokens](https://medium.freecodecamp.org/securing-node-js-restful-apis-with-json-web-tokens-9f811a92bb52)
 
 ##### 工具
 
