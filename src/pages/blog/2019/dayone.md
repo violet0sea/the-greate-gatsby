@@ -6,7 +6,7 @@ date: '2019-04-21'
 
 Gatsby 是一个基于 React 和 Graphql 的静态 html 构建网站，使用 SSR 技术；在用于博客搭建时，使用 markdown 文件写作；原理就是通过文件系统加载 markdown 文件，然后使用 markdownRemark 转化为 html，然后在利用 graphql 获取相应的数据，通过 templates 模板渲染出 Dom。
 
-## 快速开始
+### 快速开始
 
 1. 为了使用 gatsby-cli，建议全局安装
 
@@ -36,7 +36,7 @@ or  yarn develop
 一个基本的骨架搭建完毕，快速教程参考
 [creating a blog with gatsby](https://www.gatsbyjs.org/blog/2017-07-19-creating-a-blog-with-gatsby/)
 
-## 关键点
+### 关键点
 
 1. 安装**gatsby-source-filesystem** 和 **gatsby-transformer-remark** 两个插件分别用于文件读取和文件转化
 1. markdown 文件里含有 frontmatter 部分，这些数据都会被转化并注入到 react 组建里以供使用

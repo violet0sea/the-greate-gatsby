@@ -4,7 +4,7 @@ title: 'webpack-plugin-develop'
 date: '2019-04-28'
 ---
 
-## 背景
+### 背景
 
 为什么需要 plugin？webpack 作为一个前端构建工具，自身只能处理 javascript 文件，对于其他类型的文件并不支持；但是前端项目除了 javascript，还包括 css、image、font 等资源，对于这类资源的处理，是通过 loader 实现的；而 plugin 所能实现的功能，远超于 loader，比如**html-webpack-plugin**可以指定 html 模板，提供 options 用来修饰 title、meta、以及是否要压缩 html 等功能；这些功能的实现都是通过 plugin 机制实现的，通过 webpack 提供的内置 api，可以在构建的整个生命周期内触及资源以及相关的配置信息，通过对资源进行相应的处理，来达到自己预期的目的。
 wepack 的插件理解
@@ -12,7 +12,7 @@ wepack 的插件理解
 
 同样在 gatsby 中，存在相似的理念，使用 fileSystem 读取文件系统下的内容，然后使用 transform plugin 来转换（比如把 md 文件转换为 html 字符串）
 
-## 如何实现
+### 如何实现
 
 定义一个构造函数，并在其原型上定义一个 apply 方法
 

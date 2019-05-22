@@ -3,14 +3,15 @@ import { Link, graphql } from 'gatsby';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import '../assets/css/index.scss';
 
 const IndexPage = ({ data }) => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Home" keywords={['gatsby', 'application', 'react']} />
 
     <ul>
       {data.allMarkdownRemark.edges.map(({ node }) => (
-        <li key={node.id}>
+        <li key={node.id} className="blog-list">
           <Link to={node.frontmatter.path}>
             <h3>{node.frontmatter.title}</h3>
             <span>{node.frontmatter.date}</span>
@@ -24,7 +25,7 @@ const IndexPage = ({ data }) => (
 
 export const query = graphql`
   query homepagePostQuery {
-    allMarkdownRemark {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
           id
