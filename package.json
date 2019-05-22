@@ -55,11 +55,12 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run format"
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
     "*.(js|jsx)": [
+      "npm run format",
       "npm run lint:write",
       "git add"
     ]
