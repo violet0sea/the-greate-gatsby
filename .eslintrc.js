@@ -5,7 +5,7 @@ module.exports = {
     node: true,
   },
   extends: ['airbnb'],
-  plugins: ['babel', 'import', 'jsx-a11y', 'react'],
+  plugins: ['babel'],
   parser: 'babel-eslint',
   parserOptions: {
     ecmaVersion: 6,
@@ -38,7 +38,9 @@ module.exports = {
     'react/jsx-filename-extension': ['error', { extensions: ['.js'] }], // airbnb is using .jsx
 
     'prefer-destructuring': 'off',
-
+    'react/no-find-dom-node': 'off',
+    'react/no-danger': 'off',
+    'react/prop-types': 'off',
     'react/no-find-dom-node': 'off', // I don't know
     'react/no-did-mount-set-state': 'off',
     'react/no-unused-prop-types': 'off', // Is still buggy
