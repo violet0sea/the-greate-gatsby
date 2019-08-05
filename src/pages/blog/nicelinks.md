@@ -24,9 +24,25 @@ date: '2019-04-28'
 
 - 📜 [pm2 in production](https://medium.freecodecamp.org/you-should-never-ever-run-directly-against-node-js-in-production-maybe-7fdfaed51ec6)
 
+- 📜 [React SSR](https://medium.com/better-programming/demystifying-reacts-server-side-render-de335d408fe4)
+
+- 📜 [React Hooks introduce](https://www.netlify.com/blog/2019/03/11/deep-dive-how-do-react-hooks-really-work/?source=post_page---------------------------)
+
+- 📜 [Rreact-hooks-not-magic-just-arrays](https://medium.com/@ryardley/react-hooks-not-magic-just-arrays-cd4f1857236e)
+
 ##### Css
 
 - 📜 [using-font-face](https://css-tricks.com/snippets/css/using-font-face/)
+- 📜 [lazy-load-images](https://www.sitepoint.com/five-techniques-lazy-load-images-website-performance/)
+
+- 📜 [css-module](https://css-tricks.com/css-modules-part-1-need)
+
+- 📜 [css-handbook](https://medium.freecodecamp.org/the-css-handbook-a-handy-guide-to-css-for-developers-b56695917d11)
+
+- 📜 [移动端适配知识点](https://segmentfault.com/a/1190000019207842#articleHeader6)
+
+- 📜 [图片知识点](https://segmentfault.com/a/1190000019231550)
+- 📜 [medium图片加载原理](https://jmperezperez.com/medium-image-progressive-loading-placeholder/)
 
 ##### Node
 
@@ -59,16 +75,6 @@ date: '2019-04-28'
 
 - 📜 [these-tools-will-help-you-write-clean-code](https://medium.freecodecamp.org/these-tools-will-help-you-write-clean-code-da4b5401f68e)
   prettier、eslint、husky、editorconfig，husky 让人眼前一亮，给 commit 和 push 提供 hooks 方法来进行代码格式的修正或者跑测试
-
-##### css
-
-- 📜 [css-module](https://css-tricks.com/css-modules-part-1-need)
-
-- 📜 [css-handbook](https://medium.freecodecamp.org/the-css-handbook-a-handy-guide-to-css-for-developers-b56695917d11)
-
-- 📜 [移动端适配知识点](https://segmentfault.com/a/1190000019207842#articleHeader6)
-
-- 📜 [图片知识点](https://segmentfault.com/a/1190000019231550)
 
 #### 2. Repos
 
