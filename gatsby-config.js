@@ -1,42 +1,44 @@
 const autoprefixer = require('autoprefixer');
+const sass = require('sass');
 
 module.exports = {
-  pathPrefix: `/the-greate-gatsby`,
+  pathPrefix: '/the-greate-gatsby',
   siteMetadata: {
-    title: `dudulu`,
-    description: `dudulu's blog, write, code, listen to music, watch movie, etc`,
-    author: `dudulu`,
+    title: 'dudulu',
+    description:
+      "dudulu's blog, write, code, listen to music, watch movie, etc",
+    author: 'dudulu',
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-react-helmet',
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `images`,
+        name: 'images',
         path: `${__dirname}/src`,
       },
     },
-    `gatsby-transformer-remark`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    'gatsby-transformer-remark',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
-      resolve: `gatsby-plugin-postcss`,
+      resolve: 'gatsby-plugin-postcss',
       options: {
         postCssPlugins: [autoprefixer()],
       },
     },
     // `gatsby-plugin-sass`,
     {
-      resolve: `gatsby-plugin-sass`,
+      resolve: 'gatsby-plugin-sass',
       options: {
-        implementation: require('sass'),
+        implementation: sass,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
         name: 'dudulu',
         short_name: 'dudulu',
@@ -47,6 +49,9 @@ module.exports = {
         icon: 'src/images/icon.png',
       },
     },
-    `gatsby-plugin-offline`,
+    'gatsby-plugin-offline',
+    {
+      resolve: 'gatsby-plugin-no-sourcemaps',
+    },
   ],
 };

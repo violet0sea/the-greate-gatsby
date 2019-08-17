@@ -8,6 +8,7 @@
     "gatsby": "^2.3.16",
     "gatsby-image": "^2.0.37",
     "gatsby-plugin-manifest": "^2.0.29",
+    "gatsby-plugin-no-sourcemaps": "^2.1.1",
     "gatsby-plugin-offline": "^2.0.25",
     "gatsby-plugin-postcss": "^2.0.7",
     "gatsby-plugin-react-helmet": "^3.0.12",
@@ -20,10 +21,11 @@
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "sass": "^1.19.0",
+    "autoprefixer": "^9.5.1"
   },
   "devDependencies": {
-    "autoprefixer": "^9.5.1",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.0",
@@ -34,8 +36,7 @@
     "eslint-plugin-react": "^7.13.0",
     "husky": "^2.2.0",
     "lint-staged": "^8.1.6",
-    "prettier": "^1.17.0",
-    "sass": "^1.19.0"
+    "prettier": "^1.17.0"
   },
   "keywords": [
     "dudulu",
@@ -59,7 +60,7 @@
     }
   },
   "lint-staged": {
-    "*.(js|jsx)": [
+    "src/**/*.(js|jsx)": [
       "npm run format",
       "npm run lint:write",
       "git add"

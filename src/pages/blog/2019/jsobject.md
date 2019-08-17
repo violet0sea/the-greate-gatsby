@@ -13,6 +13,9 @@ date: '2019-08-04'
 ```
 const obj = new Object();
 obj.key = value;
+
+// 由于原型的存在，obj.constructor === Object，所以也会有使用如下方法的时候
+const another = new obj.constructor(); // deepClone时如果克隆的值是数组或者对象时，可以使用该方法不用去做判断
 ```
 
 ### 对象字面量
@@ -22,6 +25,19 @@ obj.key = value;
 const obj = {
     key: value
 };
+```
+
+### Object.create
+
+新创建的对象可以继承另一个对象的属性和方法
+特例： Object.create(null) 会返回一个真正意义上的空对象，没有原型，可以用作字典
+
+```
+const proto = {
+    like: 'moive'
+};
+
+const obj = Object.create(proto);
 ```
 
 以上方法虽然能创建对象，但是在创建多个时，会产生大量的重复代码，所以有产生了一些模式来创建对象
@@ -62,30 +78,6 @@ function Person(name, age, job) {
     }
 }
 const p1 = new person('Zed', 20, 'teacher');
-```
-
-关键点：new 操作符，需要了解 new 到底做了什么？
-
-1. 创建一个对象
-2. 设置该对象的原型（**proto**）为构造函数的原型
-3. 绑定 this
-4. 执行构造函数
-5. 返回该对象
-
-   代码实现如下：
-
-```
-function NewOperator(func) {
-    const res = {};
-    if(func.prototype) {
-        res.__proto__ = func.prototype;
-    }
-    const ret = func.apply(res, Array.prototype.slice.call(arguments, 1));
-    if((typeof ret === 'object' || typeof ret === 'function') && ret !== null) {
-        return ret;
-    }
-    return res;
-}
 ```
 
 缺点：实例上的每个方法都需要在生成时创建一遍
@@ -175,7 +167,7 @@ const p1 = new person('Tom', 20, 'worker');
 
 ```
 function Person(name, age, job) {
-    const res = new Object;
+    const res = new Object();
     // todo 设置一些私有变量和方法
     res.sayName = function() {
         console.log(name);
@@ -183,4 +175,21 @@ function Person(name, age, job) {
     return res;
 }
 const p1 = new Person('Tom', 20, 'driver');
+```
+
+### Class
+
+es6 使用 Class 来实现类，使用 extends 实现子类继承父类
+
+```
+Class Person {
+    constructor(name, age, job) {
+        this.name = name;
+        this.age = age;
+        this.job = job;
+    }
+    sayName() {
+        console.log(this.name);
+    }
+}
 ```
