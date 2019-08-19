@@ -24,6 +24,7 @@ date: '2019-04-28'
 
 - 📜 [pm2 in production](https://medium.freecodecamp.org/you-should-never-ever-run-directly-against-node-js-in-production-maybe-7fdfaed51ec6)
 
+- 📜 [react hooks](https://www.netlify.com/blog/2019/03/11/deep-dive-how-do-react-hooks-really-work/)
 - 📜 [React SSR](https://medium.com/better-programming/demystifying-reacts-server-side-render-de335d408fe4)
 
 - 📜 [React Hooks introduce](https://www.netlify.com/blog/2019/03/11/deep-dive-how-do-react-hooks-really-work/?source=post_page---------------------------)
@@ -42,7 +43,7 @@ date: '2019-04-28'
 - 📜 [移动端适配知识点](https://segmentfault.com/a/1190000019207842#articleHeader6)
 
 - 📜 [图片知识点](https://segmentfault.com/a/1190000019231550)
-- 📜 [medium图片加载原理](https://jmperezperez.com/medium-image-progressive-loading-placeholder/)
+- 📜 [medium 图片加载原理](https://jmperezperez.com/medium-image-progressive-loading-placeholder/)
 
 ##### Node
 
@@ -63,7 +64,7 @@ date: '2019-04-28'
 - 📜 [deploy-your-create-react-app-with-docker-and-ngnix](https://medium.com/yld-engineering-blog/deploy-your-create-react-app-with-docker-and-ngnix-653e94ffb537)
 
 - 📜 [docker-basic](http://dockone.io/article/8870)
-  docker基础理解
+  docker 基础理解
 
 - 📜 [using-docker-for-nodejs-in-development-and-production](https://dev.to/alex_barashkov/using-docker-for-nodejs-in-development-and-production-3cgp)
   使用 docker 制作 CRA 的 image

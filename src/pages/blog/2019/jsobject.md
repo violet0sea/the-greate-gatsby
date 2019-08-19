@@ -28,8 +28,10 @@ const obj = {
 ```
 
 ### Object.create
+
 新创建的对象可以继承另一个对象的属性和方法
 特例： Object.create(null) 会返回一个真正意义上的空对象，没有原型，可以用作字典
+
 ```
 const proto = {
     like: 'moive'
@@ -177,7 +179,9 @@ const p1 = new Person('Tom', 20, 'driver');
 ```
 
 ### Class
-es6使用Class来实现类，使用extends实现子类继承父类
+
+es6 使用 Class 来实现类，使用 extends 实现子类继承父类
+
 ```
 Class Person {
     constructor(name, age, job) {
