@@ -31,6 +31,8 @@ date: '2019-04-28'
 
 - 📜 [Rreact-hooks-not-magic-just-arrays](https://medium.com/@ryardley/react-hooks-not-magic-just-arrays-cd4f1857236e)
 
+- 📜 [Micro-frontend](https://micro-frontends.org/)
+
 ##### Css
 
 - 📜 [using-font-face](https://css-tricks.com/snippets/css/using-font-face/)
