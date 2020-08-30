@@ -17,7 +17,7 @@ module.exports = {
   },
   rules: {
     'linebreak-style': 'off', // Don't play nicely with Windows.
-
+    'import/prefer-default-export': 'off',
     'arrow-parens': 'off', // Incompatible with prettier
     'object-curly-newline': 'off', // Incompatible with prettier
     'no-mixed-operators': 'off', // Incompatible with prettier
